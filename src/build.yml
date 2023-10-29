@@ -24,6 +24,7 @@ Kexts:
   SMCBatteryManager: "*"
   SMCProcessor: "*"
   ECEnabler: 1Revenger1/ECEnabler=latest
+  CrosEC: 1Revenger1/CrosEC=latest
   NVMeFix: latest
   AirportItlwm-Sonoma:
     specifier: OpenIntelWireless/itlwm=^2.2.0
@@ -42,7 +43,7 @@ Kexts:
   VoodooI2C/VoodooInput: "*"
   VoodooI2CHID: "*"
   # PS/2 Keyboard
-  VoodooPS2Controller: acidanthera/VoodooPS2=latest
+  VoodooPS2Controller: 1Revenger1/VoodooPS2=latest
   VoodooPS2Controller/VoodooPS2Keyboard: "*"
 
 Resources:

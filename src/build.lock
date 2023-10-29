@@ -34,16 +34,16 @@ dependencies:
       revision: '{ SHA256: f31c42db08b5eb5ca07a10cf6b86299644e5a4f8cfc3db9dbb35bebf6d97bb31 }'
     SSDT-I2C:
       path: './ACPI/SSDT-I2C.dsl'
-      resolution: 'SSDT-I2C@file:ACPI/SSDT-I2C.dsl#checksum=9a0bedaab56992371d7c649afb6bd95551eda986ebf4caf92e419384d331fead'
+      resolution: 'SSDT-I2C@file:ACPI/SSDT-I2C.dsl#checksum=fa9335efc25e9f7adf4f5261ca4b1088a66841c125c9f1f318c4b8c34db39370'
       specifier: 'SSDT-I2C@file:ACPI/SSDT-I2C.dsl'
       kind: SSDT
-      revision: '{ SHA256: 9a0bedaab56992371d7c649afb6bd95551eda986ebf4caf92e419384d331fead }'
+      revision: '{ SHA256: fa9335efc25e9f7adf4f5261ca4b1088a66841c125c9f1f318c4b8c34db39370 }'
     SSDT-PLUG-ALT:
       path: './ACPI/SSDT-PLUG-ALT.dsl'
-      resolution: 'SSDT-PLUG-ALT@file:ACPI/SSDT-PLUG-ALT.dsl#checksum=bf376cbd0a989f188d6267d8c06cfa00c83110ecb54cabf063e20df0caa4ca0f'
+      resolution: 'SSDT-PLUG-ALT@file:ACPI/SSDT-PLUG-ALT.dsl#checksum=755291697a220bba19ba5ee6539cfff6bea82c90b6bcf6c5a1756524acc30ac1'
       specifier: 'SSDT-PLUG-ALT@file:ACPI/SSDT-PLUG-ALT.dsl'
       kind: SSDT
-      revision: '{ SHA256: bf376cbd0a989f188d6267d8c06cfa00c83110ecb54cabf063e20df0caa4ca0f }'
+      revision: '{ SHA256: 755291697a220bba19ba5ee6539cfff6bea82c90b6bcf6c5a1756524acc30ac1 }'
     SSDT-PNLF:
       path: './ACPI/SSDT-PNLF.dsl'
       resolution: 'SSDT-PNLF@file:ACPI/SSDT-PNLF.dsl#checksum=cd4bb80ca8ed85e805393c06bf1bb8c8441976c976dd0edd76cc26c597c89bac'
@@ -67,6 +67,14 @@ dependencies:
       specifier: 'OpenIntelWireless/itlwm@github:^2.2.0'
       kind: Kext
       revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
+    CrosEC:
+      build: RELEASE
+      version: 1.0.0
+      url: 'https://github.com/1Revenger1/CrosEC/releases/download/1.0.0/CrosEC-1.0.0-RELEASE.zip'
+      resolution: '1Revenger1/CrosEC@github:1.0.0#commit=e5ff3b2abdfaae940ed58a802d72654781ab5163'
+      specifier: '1Revenger1/CrosEC@github:latest'
+      kind: Kext
+      revision: '{ SHA1: e5ff3b2abdfaae940ed58a802d72654781ab5163 }'
     ECEnabler:
       build: RELEASE
       version: 1.0.4
@@ -107,14 +115,6 @@ dependencies:
       specifier: 'VoodooI2C/VoodooI2C@github:latest'
       kind: Kext
       revision: '{ SHA1: 17a5f58227a164b426011fd077a5c549766474b3 }'
-    VoodooPS2Controller:
-      build: RELEASE
-      version: 2.3.5
-      url: 'https://github.com/acidanthera/VoodooPS2/releases/download/2.3.5/VoodooPS2Controller-2.3.5-RELEASE.zip'
-      resolution: 'acidanthera/VoodooPS2@github:2.3.5#commit=410118bd89723b7e5290ae9f21f5e00078f6fd04'
-      specifier: 'acidanthera/VoodooPS2@github:latest'
-      kind: Kext
-      revision: '{ SHA1: 410118bd89723b7e5290ae9f21f5e00078f6fd04 }'
     WhateverGreen:
       build: RELEASE
       version: 1.6.7
