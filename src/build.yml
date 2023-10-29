@@ -1,0 +1,51 @@
+# src/build.yml
+---
+build: RELEASE
+version: latest
+---
+ACPI:
+  SSDT-ChromeKeys: "ACPI/SSDT-ChromeKeys.dsl"
+  SSDT-Devices: "ACPI/SSDT-Devices.dsl"
+  SSDT-EC-USBX: "ACPI/SSDT-EC-USBX.dsl"
+  SSDT-Fake-ALS: "ACPI/SSDT-Fake-ALS.dsl"
+  SSDT-I2C: "ACPI/SSDT-I2C.dsl"
+  SSDT-PLUG-ALT: "ACPI/SSDT-PLUG-ALT.dsl"
+  SSDT-PNLF: "ACPI/SSDT-PNLF.dsl"
+Drivers:
+  - HfsPlus
+  - OpenRuntime
+  - OpenCanopy
+  - OpenLinuxBoot
+Kexts:
+  Lilu: latest
+  WhateverGreen: latest
+  # VirtualSMC + plugins
+  VirtualSMC: acidanthera/VirtualSMC=latest
+  SMCBatteryManager: "*"
+  SMCProcessor: "*"
+  ECEnabler: 1Revenger1/ECEnabler=latest
+  NVMeFix: latest
+  AirportItlwm-Sonoma:
+    specifier: OpenIntelWireless/itlwm=^2.2.0
+    MaxKernel: "23.99.99"
+    MinKernel: "23.0.0"
+  AirportItlwm-Catalina:
+    specifier: OpenIntelWireless/itlwm=^2.2.0
+    MaxKernel: "19.99.99"
+    MinKernel: "19.0.0"
+
+  # Input
+  # I2C Touchscreen + Touchpad
+  VoodooI2C: VoodooI2C/VoodooI2C=latest
+  VoodooI2C/VoodooI2CServices: "*"
+  VoodooI2C/VoodooGPIO: "*"
+  VoodooI2C/VoodooInput: "*"
+  VoodooI2CHID: "*"
+  # PS/2 Keyboard
+  VoodooPS2Controller: acidanthera/VoodooPS2=latest
+  VoodooPS2Controller/VoodooPS2Keyboard: "*"
+
+Resources:
+Tools:
+  - OpenShell
+  - MmapDump
