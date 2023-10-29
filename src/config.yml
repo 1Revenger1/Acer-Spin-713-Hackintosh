@@ -17,15 +17,12 @@ ACPI:
   Delete:                             Array   | []
 
 # ==============================================================================
-# |                            Memory Map Fixes                                |
+# |                         Firmware/Memory Map Fixes                          |
 # ==============================================================================
 
 Booter:
   Quirks:
     SetupVirtualMap:                  Boolean | true
-    # The firmware only has one 256k region with runtime attributes.
-    # We disable this instead of adding an MMIO region.
-    DevirtualiseMmio:     Boolean | false
     # Prevents kernel panic on `Invalid frame pointer`.
     # - https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/extended/kernel-issues.html#kernel-panic-on-invalid-frame-pointer
     # - Note: The below options reflect support for MATs (2018+ firmware).
@@ -36,34 +33,27 @@ Booter:
     # Keep custom slide enabled as not all slides are usable.
     EnableSafeModeSlide:              Boolean | true
     ProvideCustomSlide:               Boolean | true
-
-# ==============================================================================
-# |                                iGPU Fixes                                  |
-# ==============================================================================
-
-DeviceProperties:
   @override
-  Add:
-    # iGPU Device Properties
-    PciRoot(0x0)/Pci(0x2,0x0):
-      AAPL,ig-platform-id:            Data    | <00009B3E>
-      # Spoof as UHD 630
-      device-id:                      Data    | <9B3E0000>
-      # Coreboot specific fix
-      disable-telemetry-load:         Data    | <01000000>
-      # Backlight fixes
-      enable-backlight-registers-fix: Data    | <01000000>
-      enable-backlight-registers-alternative-fix: Data | <01000000>
-      enable-backlight-smoother:      Data    | <01000000>
+  MmioWhitelist:                      Array   | []
+  @override
+  Patch:                              Array   | []
+
+Kernel:
+  Quirks:
+    # Ignore CFG Lock/MSR 0x2E
+    AppleXcpmCfgLock:                 Boolean | true
 
 # ==============================================================================
-# |                       Hibernation and NVMe Fixes                           |
+# |                      Hibernation and NVRAM Fixes                           |
 # ==============================================================================
 
 # Fixes NVRAM and other EFI runtime services
 Booter:
   Quirks:
     ProtectMemoryRegions:             Boolean | true
+    # The firmware only has one 256k region with runtime attributes.
+    # We disable this instead of adding an MMIO region.
+    DevirtualiseMmio:     Boolean | false
 
 # NVMe Device Properties
 # macOS will not hibernate unless the NVMe is marked as internal
@@ -89,6 +79,25 @@ UEFI:
       Type:                           String  | "RuntimeCode"
 
 # ==============================================================================
+# |                                iGPU Fixes                                  |
+# ==============================================================================
+
+DeviceProperties:
+  @override
+  Add:
+    # iGPU Device Properties
+    PciRoot(0x0)/Pci(0x2,0x0):
+      AAPL,ig-platform-id:            Data    | <00009B3E>
+      # Spoof as UHD 630
+      device-id:                      Data    | <9B3E0000>
+      # Coreboot specific fix
+      disable-telemetry-load:         Data    | <01000000>
+      # Backlight fixes
+      enable-backlight-registers-fix: Data    | <01000000>
+      enable-backlight-registers-alternative-fix: Data | <01000000>
+      enable-backlight-smoother:      Data    | <01000000>
+
+# ==============================================================================
 # |                            Debug Boot-args                                 |
 # ==============================================================================
 
@@ -101,8 +110,25 @@ NVRAM:
   Delete:
     7C436110-AB2A-4BBB-A880-FE41995C9F82:
       - boot-args
+  
+  # Only used when using emulated NVRAM
   @override
   LegacySchema:                       Dictionary | {}
+
+Kernel:
+  Quirks:
+    # Remove kext list dump when panic occurs
+    PanicNoKextDump:                  Boolean | true
+    # Prevent timeout kernel panics
+    PowerTimeoutKernelPanic:          Boolean | true
+  
+  # Unused fields
+  @override
+  Block:                              Array   | []
+  @override
+  Force:                              Array   | []
+  @override
+  Patch:                              Array   | []
 
 # ==============================================================================
 # |                             OpenCore Picker                                |
@@ -131,7 +157,7 @@ Misc:
 Misc:
   Security:
     # Apple Secure Boot hardware model
-    # Left as default since the model we emulate has a T2
+    # Left as default since the model we emulate has a T2 chip
     # - https://dortania.github.io/OpenCore-Post-Install/universal/security/applesecureboot.html#securebootmodel
     SecureBootModel:                  String  | "Default"
     # OpenCore vaulting configuration
