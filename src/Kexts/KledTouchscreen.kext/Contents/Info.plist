@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.1revenger1.kled</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>CFBundleGetInfoString</key>
+	<string>VoodooI2C injector for KLED [Acer Spin 713 2020]</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>ELAN9004 - Touchscreen HID Event Driver</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.alexandred.VoodooI2CHID</string>
+			<key>IOClass</key>
+			<string>VoodooI2CHIDDevice</string>
+			<key>IOProbeScore</key>
+			<integer>300</integer>
+			<key>IOPropertyMatch</key>
+			<dict>
+				<key>compatible</key>
+				<string>PNP0C50</string>
+			</dict>
+			<key>IOProviderClass</key>
+			<string>VoodooI2CDeviceNub</string>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.alexandred.VoodooI2C</key>
+		<string>2.0</string>
+		<key>com.alexandred.VoodooI2CHID</key>
+		<string>1.0</string>
+	</dict>
+</dict>
+</plist>

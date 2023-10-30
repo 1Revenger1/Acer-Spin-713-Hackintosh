@@ -197,14 +197,14 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "PNLF", 0)
                                 0x0bd1, 0x0bd2, 0x0BD3, 0x1606, 0x160e, 0x1616, 0x161e, 0x1626, 0x1622, 0x1612, 0x162b,
                             }, MEQ, Local0, MTR, 0, 0))
                             {
-                                Local2 = HASWELL_PWMMAX
+                                Local2 = (HASWELL_PWMMAX)
                             }
                             Else
                             {
                                 // assume Skylake/KabyLake/KabyLake-R, both 0x56c
                                 // 0x1916, 0x191E, 0x1926, 0x1927, 0x1912, 0x1932, 0x1902, 0x1917, 0x191b,
                                 // 0x5916, 0x5912, 0x591b, others...
-                                Local2 = SKYLAKE_PWMMAX
+                                Local2 = (SKYLAKE_PWMMAX)
                             }
                         }
                         INI1 (Local4)

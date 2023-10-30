@@ -140,10 +140,10 @@ Misc:
     # Hide recovery and other extra entries unless Spacebar is pressed
     HideAuxiliary:                    Boolean | True
     # Picker attributes for OpenCanopy
-    # 1 = Use Custom Volume icons
-    # 2 = Use disk label files
-    # 16 = Pointer support
-    # 128 = Use Flavour Icons
+    #  0x01 = Use Custom Volume icons
+    #  0x02 = Use disk label files
+    #  0x10 = Pointer support
+    #  0x80 = Use Flavour Icons
     PickerAttributes:                 Number  | 147
     # Use OpenCanopy instead of builtin picker
     PickerMode:                       String  | "External"
@@ -163,6 +163,12 @@ Misc:
     # OpenCore vaulting configuration
     # - https://dortania.github.io/OpenCore-Post-Install/universal/security/vault.html
     Vault:                            String  | "Optional"
+    # Sets whether OpenCore can expose information about itself and the system
+    #  0x1 = OpenCore path as UEFI Variable
+    #  0x2 = OpenCore Version as UEFI Variable
+    #  0x4 = OpenCore Version as text in picker
+    #  0x8 = OEM Board info as UEFI Variable
+    ExposeSensitiveData:              Number  | 0
 
 NVRAM:
   Add:

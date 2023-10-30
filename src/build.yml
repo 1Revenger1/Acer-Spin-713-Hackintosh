@@ -19,13 +19,17 @@ Drivers:
 Kexts:
   Lilu: latest
   WhateverGreen: latest
+
   # VirtualSMC + plugins
-  VirtualSMC: acidanthera/VirtualSMC=latest
-  SMCBatteryManager: "*"
-  SMCProcessor: "*"
+  VirtualSMC:
+    specifier: latest
+    bundled:
+      - SMCBatteryManager
+      - SMCProcessor
   ECEnabler: 1Revenger1/ECEnabler=latest
-  CrosEC: 1Revenger1/CrosEC=latest
   NVMeFix: latest
+
+  # Wifi
   AirportItlwm-Sonoma:
     specifier: OpenIntelWireless/itlwm=^2.2.0
     MaxKernel: "23.99.99"
@@ -34,17 +38,39 @@ Kexts:
     specifier: OpenIntelWireless/itlwm=^2.2.0
     MaxKernel: "19.99.99"
     MinKernel: "19.0.0"
+  
+  # Bluetooth
+  BlueToolFixup:
+    specifier: acidanthera/BrcmPatchRAM=latest
+    MinKernel: "21.00.0"
+  IntelBTPatcher: OpenIntelWireless/IntelBluetoothFirmware=latest
+  IntelBluetoothFirmware: "*"
+  IntelBluetoothInjector:
+    specifier: "*"
+    MaxKernel: "20.99.9"
 
   # Input
-  # I2C Touchscreen + Touchpad
-  VoodooI2C: VoodooI2C/VoodooI2C=latest
-  VoodooI2C/VoodooI2CServices: "*"
-  VoodooI2C/VoodooGPIO: "*"
-  VoodooI2C/VoodooInput: "*"
-  VoodooI2CHID: "*"
+  VoodooI2C:
+    specifier: VoodooI2C/VoodooI2C=^2.8
+    bundled:
+      - VoodooI2CServices
+      - VoodooGPIO
+      - VoodooInput
+      - VoodooI2CHID
+      - VoodooI2CELAN
+  
+  KledTouchscreen: "./Kexts/KledTouchscreen.kext"
+  
   # PS/2 Keyboard
-  VoodooPS2Controller: 1Revenger1/VoodooPS2=latest
-  VoodooPS2Controller/VoodooPS2Keyboard: "*"
+  VoodooPS2Controller:
+    specifier: 1Revenger1/VoodooPS2=^3.0.1
+    bundled:
+      - VoodooPS2Keyboard
+
+  # Fan control
+  ChultraDPTF: "./Kexts/ChultraDPTF.kext"
+  # Accelorometer and Chromebook specific controls
+  CrosEC: 1Revenger1/CrosEC=latest
 
 Resources:
 Tools:
