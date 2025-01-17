@@ -23,17 +23,16 @@ Kexts:
   # VirtualSMC + plugins
   VirtualSMC:
     specifier: latest
-    bundled:
-      - SMCBatteryManager
-      - SMCProcessor
+  SMCBatteryManager: "*"
+  SMCProcessor: "*"
   ECEnabler: 1Revenger1/ECEnabler=latest
   NVMeFix: latest
 
   # Wifi
-  AirportItlwm-Sonoma:
+  AirportItlwm-Sonoma14.4:
     specifier: OpenIntelWireless/itlwm=^2.2.0
     MaxKernel: "23.99.99"
-    MinKernel: "23.0.0"
+    MinKernel: "23.4.0"
   AirportItlwm-Catalina:
     specifier: OpenIntelWireless/itlwm=^2.2.0
     MaxKernel: "19.99.99"
@@ -51,13 +50,13 @@ Kexts:
 
   # Input
   VoodooI2C:
-    specifier: VoodooI2C/VoodooI2C=^2.8
+    specifier: VoodooI2C/VoodooI2C=^2.9.1
     bundled:
       - VoodooI2CServices
       - VoodooGPIO
       - VoodooInput
-      - VoodooI2CHID
-      - VoodooI2CELAN
+  VoodooI2CHID: "*"
+  VoodooI2CELAN: "*"
   
   KledTouchscreen: "./Kexts/KledTouchscreen.kext"
   

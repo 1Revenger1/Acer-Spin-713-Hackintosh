@@ -10,71 +10,71 @@ dependencies:
   ACPI:
     SSDT-ChromeKeys:
       path: './ACPI/SSDT-ChromeKeys.dsl'
-      resolution: 'SSDT-ChromeKeys@file:ACPI/SSDT-ChromeKeys.dsl#checksum=f6e191f5d48f3f57a831e3813b3b13c4cac7a70b705e20eceb3b1f756beb71dd'
+      resolution: 'SSDT-ChromeKeys@file:ACPI/SSDT-ChromeKeys.dsl#checksum=c7cba8abc5c28e2023d98b295980a40536806035a2158267ad23650bbe4b1022'
       specifier: 'SSDT-ChromeKeys@file:ACPI/SSDT-ChromeKeys.dsl'
       kind: SSDT
-      revision: '{ SHA256: f6e191f5d48f3f57a831e3813b3b13c4cac7a70b705e20eceb3b1f756beb71dd }'
+      revision: '{ SHA256: c7cba8abc5c28e2023d98b295980a40536806035a2158267ad23650bbe4b1022 }'
     SSDT-Devices:
       path: './ACPI/SSDT-Devices.dsl'
-      resolution: 'SSDT-Devices@file:ACPI/SSDT-Devices.dsl#checksum=29a14b0205ce61120637cd414edc2b443b6f30c27d58f464ba483f5c72f276da'
+      resolution: 'SSDT-Devices@file:ACPI/SSDT-Devices.dsl#checksum=fea5069a418d112729ffa6b0820b8f486132557f016d4c90b351316b3d80e728'
       specifier: 'SSDT-Devices@file:ACPI/SSDT-Devices.dsl'
       kind: SSDT
-      revision: '{ SHA256: 29a14b0205ce61120637cd414edc2b443b6f30c27d58f464ba483f5c72f276da }'
+      revision: '{ SHA256: fea5069a418d112729ffa6b0820b8f486132557f016d4c90b351316b3d80e728 }'
     SSDT-EC-USBX:
       path: './ACPI/SSDT-EC-USBX.dsl'
-      resolution: 'SSDT-EC-USBX@file:ACPI/SSDT-EC-USBX.dsl#checksum=6b8e7cd6ddd5911edf1b9016a4bf3faf8056d8f9ac4c894814e5a99ae7689b7b'
+      resolution: 'SSDT-EC-USBX@file:ACPI/SSDT-EC-USBX.dsl#checksum=ed08f5d2e1aee1d684e58ab0c9aca5607fbbe6256420133d66c3b75459b4f602'
       specifier: 'SSDT-EC-USBX@file:ACPI/SSDT-EC-USBX.dsl'
       kind: SSDT
-      revision: '{ SHA256: 6b8e7cd6ddd5911edf1b9016a4bf3faf8056d8f9ac4c894814e5a99ae7689b7b }'
+      revision: '{ SHA256: ed08f5d2e1aee1d684e58ab0c9aca5607fbbe6256420133d66c3b75459b4f602 }'
     SSDT-Fake-ALS:
       path: './ACPI/SSDT-Fake-ALS.dsl'
-      resolution: 'SSDT-Fake-ALS@file:ACPI/SSDT-Fake-ALS.dsl#checksum=f31c42db08b5eb5ca07a10cf6b86299644e5a4f8cfc3db9dbb35bebf6d97bb31'
+      resolution: 'SSDT-Fake-ALS@file:ACPI/SSDT-Fake-ALS.dsl#checksum=967758ba8003042ddeeadf3de2e1cb53bf052b4d5b24d03399dc58b098d0f89e'
       specifier: 'SSDT-Fake-ALS@file:ACPI/SSDT-Fake-ALS.dsl'
       kind: SSDT
-      revision: '{ SHA256: f31c42db08b5eb5ca07a10cf6b86299644e5a4f8cfc3db9dbb35bebf6d97bb31 }'
+      revision: '{ SHA256: 967758ba8003042ddeeadf3de2e1cb53bf052b4d5b24d03399dc58b098d0f89e }'
     SSDT-I2C:
       path: './ACPI/SSDT-I2C.dsl'
-      resolution: 'SSDT-I2C@file:ACPI/SSDT-I2C.dsl#checksum=fa9335efc25e9f7adf4f5261ca4b1088a66841c125c9f1f318c4b8c34db39370'
+      resolution: 'SSDT-I2C@file:ACPI/SSDT-I2C.dsl#checksum=a38592d2a3f145604831933894881c9c369c2462e6c70a1213aeb134306e8135'
       specifier: 'SSDT-I2C@file:ACPI/SSDT-I2C.dsl'
       kind: SSDT
-      revision: '{ SHA256: fa9335efc25e9f7adf4f5261ca4b1088a66841c125c9f1f318c4b8c34db39370 }'
+      revision: '{ SHA256: a38592d2a3f145604831933894881c9c369c2462e6c70a1213aeb134306e8135 }'
     SSDT-PLUG-ALT:
       path: './ACPI/SSDT-PLUG-ALT.dsl'
-      resolution: 'SSDT-PLUG-ALT@file:ACPI/SSDT-PLUG-ALT.dsl#checksum=755291697a220bba19ba5ee6539cfff6bea82c90b6bcf6c5a1756524acc30ac1'
+      resolution: 'SSDT-PLUG-ALT@file:ACPI/SSDT-PLUG-ALT.dsl#checksum=19b6c3dacb996fba722585836b2399e0c7f22cb62df0a0544efcb40071eab086'
       specifier: 'SSDT-PLUG-ALT@file:ACPI/SSDT-PLUG-ALT.dsl'
       kind: SSDT
-      revision: '{ SHA256: 755291697a220bba19ba5ee6539cfff6bea82c90b6bcf6c5a1756524acc30ac1 }'
+      revision: '{ SHA256: 19b6c3dacb996fba722585836b2399e0c7f22cb62df0a0544efcb40071eab086 }'
     SSDT-PNLF:
       path: './ACPI/SSDT-PNLF.dsl'
-      resolution: 'SSDT-PNLF@file:ACPI/SSDT-PNLF.dsl#checksum=d728186fb5064bf1dfb0817274b7b462236a8b665ce5976cd95505cdedde372c'
+      resolution: 'SSDT-PNLF@file:ACPI/SSDT-PNLF.dsl#checksum=fde6576f6644f87a844191b82b625723743d6831923d237f0707d305d919e484'
       specifier: 'SSDT-PNLF@file:ACPI/SSDT-PNLF.dsl'
       kind: SSDT
-      revision: '{ SHA256: d728186fb5064bf1dfb0817274b7b462236a8b665ce5976cd95505cdedde372c }'
+      revision: '{ SHA256: fde6576f6644f87a844191b82b625723743d6831923d237f0707d305d919e484 }'
   Kexts:
     AirportItlwm-Catalina:
       build: RELEASE
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Catalina-v2.3.0-DEBUG-alpha-ff1138b.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Catalina.kext.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
       specifier: 'OpenIntelWireless/itlwm@github:^2.2.0'
       kind: Kext
-      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
-    AirportItlwm-Sonoma:
+      revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
+    AirportItlwm-Sonoma14.4:
       build: RELEASE
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Sonoma-v2.3.0-DEBUG-alpha-ff1138b.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Sonoma14.4.kext.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
       specifier: 'OpenIntelWireless/itlwm@github:^2.2.0'
       kind: Kext
-      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
+      revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     BlueToolFixup:
       build: RELEASE
-      version: 2.6.8
-      url: 'https://github.com/acidanthera/BrcmPatchRAM/releases/download/2.6.8/BrcmPatchRAM-2.6.8-DEBUG.zip'
-      resolution: 'acidanthera/BrcmPatchRAM@github:2.6.8#commit=2305aaa145a0021559f444d33a5adaacb6469050'
+      version: 2.6.9
+      url: 'https://github.com/acidanthera/BrcmPatchRAM/releases/download/2.6.9/BrcmPatchRAM-2.6.9-DEBUG.zip'
+      resolution: 'acidanthera/BrcmPatchRAM@github:2.6.9#commit=15f52d12b3ff6715a64fe373946e62d04d95bf16'
       specifier: 'acidanthera/BrcmPatchRAM@github:latest'
       kind: Kext
-      revision: '{ SHA1: 2305aaa145a0021559f444d33a5adaacb6469050 }'
+      revision: '{ SHA1: 15f52d12b3ff6715a64fe373946e62d04d95bf16 }'
     ChultraDPTF:
       path: ./Kexts/ChultraDPTF.kext
       resolution: 'ChultraDPTF@file:Kexts/ChultraDPTF.kext#checksum=add73a33797b4723da075de6c0c7cbabb7170111275efa248a4f59d48333d58c'
@@ -83,36 +83,36 @@ dependencies:
       revision: '{ SHA256: add73a33797b4723da075de6c0c7cbabb7170111275efa248a4f59d48333d58c }'
     CrosEC:
       build: RELEASE
-      version: 1.0.0
-      url: 'https://github.com/1Revenger1/CrosEC/releases/download/1.0.0/CrosEC-1.0.0-RELEASE.zip'
-      resolution: '1Revenger1/CrosEC@github:1.0.0#commit=e5ff3b2abdfaae940ed58a802d72654781ab5163'
+      version: 1.0.1
+      url: 'https://github.com/Chromeintosh/CrosEC/releases/download/1.0.1/CrosEC-1.0.1-RELEASE.zip'
+      resolution: '1Revenger1/CrosEC@github:1.0.1#commit=e810fdee23b8cbab83e5c3a3777b145711d19b4a'
       specifier: '1Revenger1/CrosEC@github:latest'
       kind: Kext
-      revision: '{ SHA1: e5ff3b2abdfaae940ed58a802d72654781ab5163 }'
+      revision: '{ SHA1: e810fdee23b8cbab83e5c3a3777b145711d19b4a }'
     ECEnabler:
       build: RELEASE
-      version: 1.0.4
-      url: 'https://github.com/1Revenger1/ECEnabler/releases/download/1.0.4/ECEnabler-1.0.4-RELEASE.zip'
-      resolution: '1Revenger1/ECEnabler@github:1.0.4#commit=501420f2c01ce28166327a5027567ef6db8f0adc'
+      version: 1.0.5
+      url: 'https://github.com/1Revenger1/ECEnabler/releases/download/1.0.5/ECEnabler-1.0.5-RELEASE.zip'
+      resolution: '1Revenger1/ECEnabler@github:1.0.5#commit=bd81da698fdd2012d7508595113efcb7d9a6d990'
       specifier: '1Revenger1/ECEnabler@github:latest'
       kind: Kext
-      revision: '{ SHA1: 501420f2c01ce28166327a5027567ef6db8f0adc }'
+      revision: '{ SHA1: bd81da698fdd2012d7508595113efcb7d9a6d990 }'
     IntelBTPatcher:
       build: RELEASE
-      version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/download/v2.3.0/IntelBluetooth-v2.3.0.zip'
-      resolution: 'OpenIntelWireless/IntelBluetoothFirmware@github:2.3.0#commit=592507aa8cb3d0df3e524bb869f2836271e4fb48'
+      version: 2.4.0
+      url: 'https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/download/v2.4.0/IntelBluetooth-v2.4.0.zip'
+      resolution: 'OpenIntelWireless/IntelBluetoothFirmware@github:2.4.0#commit=b9127f5e1ede477577470cc4d4f55134a2901f5b'
       specifier: 'OpenIntelWireless/IntelBluetoothFirmware@github:latest'
       kind: Kext
-      revision: '{ SHA1: 592507aa8cb3d0df3e524bb869f2836271e4fb48 }'
+      revision: '{ SHA1: b9127f5e1ede477577470cc4d4f55134a2901f5b }'
     IntelBluetoothFirmware:
       build: RELEASE
-      version: 2.4.0
-      url: 'https://github.com/dortania/build-repo/releases/download/IntelBluetoothFirmware-dfe0e21/IntelBluetoothFirmware-2.4.0-RELEASE.zip'
-      resolution: 'acidanthera/IntelBluetoothFirmware@github:2.4.0#commit=dfe0e21ca84b30abcb582c299cccd637c8bfe38a'
+      version: 2.5.0
+      url: 'https://github.com/dortania/build-repo/releases/download/IntelBluetoothFirmware-01cc180/IntelBluetoothFirmware-2.5.0-RELEASE.zip'
+      resolution: 'acidanthera/IntelBluetoothFirmware@github:2.5.0#commit=01cc1806d71f5cc64c464851b9f4811a3e7b4791'
       specifier: 'acidanthera/IntelBluetoothFirmware@github'
       kind: Kext
-      revision: '{ SHA1: dfe0e21ca84b30abcb582c299cccd637c8bfe38a }'
+      revision: '{ SHA1: 01cc1806d71f5cc64c464851b9f4811a3e7b4791 }'
     KledTouchscreen:
       path: ./Kexts/KledTouchscreen.kext
       resolution: 'KledTouchscreen@file:Kexts/KledTouchscreen.kext#checksum=09664c89c4c72e83c67ec7c778df6b641b573e0d99ee29ef4fca02dff44a85ee'
@@ -121,12 +121,12 @@ dependencies:
       revision: '{ SHA256: 09664c89c4c72e83c67ec7c778df6b641b573e0d99ee29ef4fca02dff44a85ee }'
     Lilu:
       build: RELEASE
-      version: 1.6.8
-      url: 'https://github.com/dortania/build-repo/releases/download/Lilu-472442f/Lilu-1.6.8-RELEASE.zip'
-      resolution: 'acidanthera/Lilu@github:1.6.8#commit=472442f344531f88d31628da44f0778655a8e532'
+      version: 1.7.0
+      url: 'https://github.com/dortania/build-repo/releases/download/Lilu-f32ae0f/Lilu-1.7.0-RELEASE.zip'
+      resolution: 'acidanthera/Lilu@github:1.7.0#commit=f32ae0f11d10857f4b4c0f03440bca7c2e2a1793'
       specifier: 'acidanthera/Lilu@github'
       kind: Kext
-      revision: '{ SHA1: 472442f344531f88d31628da44f0778655a8e532 }'
+      revision: '{ SHA1: f32ae0f11d10857f4b4c0f03440bca7c2e2a1793 }'
     NVMeFix:
       build: RELEASE
       version: 1.1.2
@@ -137,20 +137,20 @@ dependencies:
       revision: '{ SHA1: 8680ddeab13ca176b263590222cd9d5e9afa69a8 }'
     VirtualSMC:
       build: RELEASE
-      version: 1.3.3
-      url: 'https://github.com/dortania/build-repo/releases/download/VirtualSMC-038200e/VirtualSMC-1.3.3-RELEASE.zip'
-      resolution: 'acidanthera/VirtualSMC@github:1.3.3#commit=038200ee31a73b1c038c865a18cfc7ae6384bc53'
+      version: 1.3.4
+      url: 'https://github.com/dortania/build-repo/releases/download/VirtualSMC-c6da306/VirtualSMC-1.3.4-RELEASE.zip'
+      resolution: 'acidanthera/VirtualSMC@github:1.3.4#commit=c6da306bf075fe912e89c15b88bb95a691bebec3'
       specifier: 'acidanthera/VirtualSMC@github'
       kind: Kext
-      revision: '{ SHA1: 038200ee31a73b1c038c865a18cfc7ae6384bc53 }'
+      revision: '{ SHA1: c6da306bf075fe912e89c15b88bb95a691bebec3 }'
     VoodooI2C:
       build: RELEASE
-      version: 2.8
-      url: 'https://github.com/VoodooI2C/VoodooI2C/releases/download/2.8/VoodooI2C-2.8.zip'
-      resolution: 'VoodooI2C/VoodooI2C@github:2.8#commit=17a5f58227a164b426011fd077a5c549766474b3'
-      specifier: 'VoodooI2C/VoodooI2C@github:^2.8'
+      version: 2.9.1
+      url: 'https://github.com/VoodooI2C/VoodooI2C/releases/download/v2.9.1/VoodooI2C-2.9.1-RELEASE.zip'
+      resolution: 'VoodooI2C/VoodooI2C@github:2.9.1#commit=e3ac3ed207170c39db88d6a67a76cc9fd3a1895a'
+      specifier: 'VoodooI2C/VoodooI2C@github:^2.9.1'
       kind: Kext
-      revision: '{ SHA1: 17a5f58227a164b426011fd077a5c549766474b3 }'
+      revision: '{ SHA1: e3ac3ed207170c39db88d6a67a76cc9fd3a1895a }'
     VoodooPS2Controller:
       build: RELEASE
       version: 3.0.1
@@ -161,25 +161,25 @@ dependencies:
       revision: '{ SHA1: 860783a8d856be7cd2ee84449feee59b1929e392 }'
     WhateverGreen:
       build: RELEASE
-      version: 1.6.7
-      url: 'https://github.com/dortania/build-repo/releases/download/WhateverGreen-1541f13/WhateverGreen-1.6.7-RELEASE.zip'
-      resolution: 'acidanthera/WhateverGreen@github:1.6.7#commit=1541f13a5f8c0e80b1f0869ef7e687319d092fa6'
+      version: 1.6.9
+      url: 'https://github.com/dortania/build-repo/releases/download/WhateverGreen-9818f96/WhateverGreen-1.6.9-RELEASE.zip'
+      resolution: 'acidanthera/WhateverGreen@github:1.6.9#commit=9818f96b131c444b8a5dbabf90195f8c0a8f24a8'
       specifier: 'acidanthera/WhateverGreen@github'
       kind: Kext
-      revision: '{ SHA1: 1541f13a5f8c0e80b1f0869ef7e687319d092fa6 }'
+      revision: '{ SHA1: 9818f96b131c444b8a5dbabf90195f8c0a8f24a8 }'
   OpenCorePkg:
     OcBinaryData:
       build: RELEASE
-      url: 'https://github.com/acidanthera/OcBinaryData/archive/4e7e1b7465aae297d706afe5de5c4d1572d86917.tar.gz'
-      resolution: 'acidanthera/OcBinaryData@github#commit=4e7e1b7465aae297d706afe5de5c4d1572d86917'
+      url: 'https://github.com/acidanthera/OcBinaryData/archive/af09b0bf763363ec9f4ecdbbe2f0adeb970948d8.tar.gz'
+      resolution: 'acidanthera/OcBinaryData@github#commit=af09b0bf763363ec9f4ecdbbe2f0adeb970948d8'
       specifier: 'acidanthera/OcBinaryData@github:latest'
       kind: Binary
-      revision: '{ SHA1: 4e7e1b7465aae297d706afe5de5c4d1572d86917 }'
+      revision: '{ SHA1: af09b0bf763363ec9f4ecdbbe2f0adeb970948d8 }'
     OpenCore:
       build: RELEASE
-      version: 0.9.5
-      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/0.9.5/OpenCore-0.9.5-RELEASE.zip'
-      resolution: 'acidanthera/OpenCorePkg@github:0.9.5#commit=dac51abbab2ce67945092727d32b5a4b2b58b1e7'
+      version: 1.0.3
+      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/1.0.3/OpenCore-1.0.3-RELEASE.zip'
+      resolution: 'acidanthera/OpenCorePkg@github:1.0.3#commit=9163821d812972705854c9b1117322b8d8eed5a2'
       specifier: 'acidanthera/OpenCorePkg@github:latest'
       kind: Binary
-      revision: '{ SHA1: dac51abbab2ce67945092727d32b5a4b2b58b1e7 }'
+      revision: '{ SHA1: 9163821d812972705854c9b1117322b8d8eed5a2 }'
