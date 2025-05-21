@@ -65,8 +65,24 @@ DeviceProperties:
 # Tell OpenCore to look for either RTC or NVRAM hibernation variables
 Misc:
   Boot:
-    HibernateMode                     String  | "Auto"
-    HibernationSkipsPicker            Boolean | True
+    HibernateMode:                    String  | "Auto"
+    HibernationSkipsPicker:           Boolean | True
+
+NVRAM:
+  Add:
+    E09B9297-7928-4440-9AAB-D1F8536FBF0A:
+      # Bitmask that configures hibernation fixup's auto hibernation feature
+      # https://github.com/acidanthera/HibernationFixup?tab=readme-ov-file#boot-args
+      # 0x01 = EnableAutoHibernation
+      # 0x02 = WhenLidIsClosed (not set)
+      # 0x04 = WhenExternalPowerIsDisconnected
+      # 0x08 = WhenBatteryIsNotCharging (not set)
+      # 0x10 = WhenBatteryIsAtWarnLevel
+      # 0x20 = WhenBatteryIsAtCriticalLevel
+      # 0x40 = DoNotOverrideWakeUpTime (not set)
+      # 0x80 = DisableStimulusDarkWakeActivityTickle (not set)
+      # Bits 8-11 encode battery level to hibernate at (Set to 5% currently)
+      hbfx-ahbm:                      Number  | 1333
 
 # Protect memory region at 0x8B000 required for hibernation
 UEFI:
